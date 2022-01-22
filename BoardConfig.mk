@@ -26,11 +26,9 @@ AB_OTA_PARTITIONS += \
 # Audio
 TARGET_PROVIDES_AUDIO_EXTNS := true
 
+
 # Board
 TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
-
-# Broken rules
-BUILD_BROKEN_DUP_RULES := true
 
 # Display
 TARGET_SCREEN_DENSITY := 440
