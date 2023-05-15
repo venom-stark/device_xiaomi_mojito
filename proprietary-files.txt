@@ -794,13 +794,13 @@ vendor/etc/seccomp_policy/imsrtp.policy
 -vendor/lib64/vendor.qti.imsrtpservice@3.0-service-Impl.so
 -vendor/lib64/vendor.qti.imsrtpservice@3.0.so;MODULE=vendor.qti.imsrtpservice@3.0_vendor
 
-# IO prefetcher
--vendor/bin/hw/vendor.qti.hardware.iop@2.0-service
-vendor/etc/init/vendor.qti.hardware.iop@2.0-service.rc
--vendor/lib64/libqti-iopd-client.so
--vendor/lib64/libqti-iopd.so
--vendor/lib64/vendor.qti.hardware.iop@1.0.so
--vendor/lib64/vendor.qti.hardware.iop@2.0.so
+# IO prefetcher - from LA.UM.9.1.r1-12900-SMxxx0.0
+-vendor/bin/hw/vendor.qti.hardware.iop@2.0-service|b0e064fc7a77ee809065fb6a9532229063f9484c
+vendor/etc/init/vendor.qti.hardware.iop@2.0-service.rc|fd11367b2585702190ef2577ce2ce6fc68f3a2f8
+-vendor/lib64/libqti-iopd-client.so|9f644b46e1c9cae11b6131cee099d47ff8d4e730
+-vendor/lib64/libqti-iopd.so|c76e41a21717245d6a33658c0d3364fd0dc8136a
+-vendor/lib64/vendor.qti.hardware.iop@1.0.so|23d85063dc470a2eee35a21e41a431a78f37c0b4
+-vendor/lib64/vendor.qti.hardware.iop@2.0.so|2f56757d0cbb082bcf7a4432243374ce53b2e6ec
 
 # IPA
 vendor/etc/init/ipa_fws.rc
@@ -812,8 +812,8 @@ vendor/firmware/ipa_fws.b04
 vendor/firmware/ipa_fws.elf
 vendor/firmware/ipa_fws.mdt
 
-# IRQ balance
--vendor/bin/msm_irqbalance
+# IRQ balance - from LA.UM.9.1.r1-12900-SMxxx0.0
+-vendor/bin/msm_irqbalance|b075c2f4092c175950a2c26d19bf2013e2efd6d5
 
 # Keymaster
 -vendor/bin/hw/android.hardware.keymaster@4.1-service-qti
@@ -914,35 +914,35 @@ vendor/etc/init/android.hardware.neuralnetworks@1.3-service-qti.rc
 -vendor/lib64/unnhal-acc-hta.so
 -vendor/lib64/unnhal-acc-hvx.so
 
-# Perf
--vendor/bin/hw/vendor.qti.hardware.perf@2.2-service
-vendor/etc/init/vendor.qti.hardware.perf@2.2-service.rc
-vendor/etc/lm/AdaptLaunchFeature.xml
-vendor/etc/lm/AppClassifierFeature.xml
-vendor/etc/lm/GameOptimizationFeature.xml
-vendor/etc/perf/commonresourceconfigs.xml
-vendor/etc/perf/commonsysnodesconfigs.xml
-vendor/etc/perf/targetconfig.xml
-vendor/etc/perf/targetresourceconfigs.xml
-vendor/etc/powerhint.xml
--vendor/lib64/libadaptlaunch.so
--vendor/lib64/libappclassifier.so
--vendor/lib64/libgameoptfeature.so
--vendor/lib64/liblearningmodule.so
--vendor/lib64/libmeters-ns.so
--vendor/lib64/libmeters.so
--vendor/lib64/libperfconfig.so
--vendor/lib64/libperfgluelayer.so
--vendor/lib64/libperfioctl.so
--vendor/lib64/libqti-perfd-client.so
--vendor/lib64/libqti-perfd.so
--vendor/lib64/libqti-util.so
--vendor/lib64/libqti-utils.so
--vendor/lib64/libreffeature.so
--vendor/lib64/libskewknob.so
--vendor/lib64/vendor.qti.memory.pasrmanager@1.0.so
--vendor/lib64/vendor.qti.memory.pasrmanager@1.1.so
--vendor/lib64/vendor.qti.power.pasrmanager@1.0.so
+# Perf - from LA.UM.9.1.r1-12900-SMxxx0.0
+-vendor/bin/hw/vendor.qti.hardware.perf@2.2-service|4627a51573e47a54ebf96ea3623d647588a84277
+vendor/etc/init/vendor.qti.hardware.perf@2.2-service.rc|459b4c23550a56ac545f78c6d391f3d7dd9ba45b
+vendor/etc/lm/AdaptLaunchFeature.xml|d864a3d5add9408b808ca2ae3dc28279d6481d27
+vendor/etc/lm/AppClassifierFeature.xml|80bcbf8fc50ed706e8549432140323dbb9e8ae4c
+vendor/etc/lm/GameOptimizationFeature.xml|5267dbb620e40e3972eaa72a2aa21685b3bc71a2
+vendor/etc/perf/commonresourceconfigs.xml|c03bd36054bb5d327ad12dc711b58b3f658d261c
+vendor/etc/perf/commonsysnodesconfigs.xml|77ea36edec83f67f5c5591f36bd0f75e361db097
+vendor/etc/perf/targetconfig.xml|53d6e2936c1cdc67edf86a2ccf04084adbff4a68
+vendor/etc/perf/targetresourceconfigs.xml|49b63c04a7b471a6bb957b378ec7a68ae1e2e521
+vendor/etc/powerhint.xml|72ee6d4e7af476889a1b6801af792ac085791811
+-vendor/lib64/libadaptlaunch.so|131dabf23d3eaeefc29402add059dfd8e1b4f7d5
+-vendor/lib64/libappclassifier.so|684c838a9968ea09685e5edbe990ee5bee91a9a8
+-vendor/lib64/libgameoptfeature.so|89002d9d4186f25d176e9c903601e1984ea0ab7e
+-vendor/lib64/liblearningmodule.so|064545ff65df121399113d3561ec82a0b135766c
+-vendor/lib64/libmeters-ns.so|a16643f4a4714cb2b3f26156986443584e669425
+-vendor/lib64/libmeters.so|5b929c11eb2976fcab2934848a0d0b49b0fafb36
+-vendor/lib64/libperfconfig.so|06fc5f5cfb6dae18bba45372ff424a97769a60dd
+-vendor/lib64/libperfgluelayer.so|5fd74627e6da137083a450e542673d4027d43d57
+-vendor/lib64/libperfioctl.so|498c3bea17bfa6f98fb6ba4c279bb151a139415d
+-vendor/lib64/libqti-perfd-client.so|62c21bcb8cac644c702fb53e3274ccdb1298c42d
+-vendor/lib64/libqti-perfd.so|cd9c5dc9c440101f803e4393e28aad0bffda7284
+-vendor/lib64/libqti-util.so|48519e0baba84978b8593576579d33cd78cd0f8f
+-vendor/lib64/libqti-utils.so|851798783cd77f7f847a67f1fff65ff727c9522b
+-vendor/lib64/libreffeature.so|d9b49aa33918b312e53e573a8c81742aae94581e
+-vendor/lib64/libskewknob.so|431754384a518f3019af8091ea07c58ef1a43b1c
+-vendor/lib64/vendor.qti.memory.pasrmanager@1.0.so|f4a4ca6c518639551fb60e2a0287692d455bddd8
+-vendor/lib64/vendor.qti.memory.pasrmanager@1.1.so|b5c361abda63650522efe75eb264df6237b614dc
+-vendor/lib64/vendor.qti.power.pasrmanager@1.0.so|ac738d8aba807b3b150618ae89a9994453fd7b1f
 
 # Peripheral Manager
 -vendor/bin/pm-proxy
