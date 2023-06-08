@@ -236,6 +236,7 @@ persist.vendor.radio.snapshot_timer=5
 
 # Soc
 ro.soc.manufacturer=QTI
+ro.soc.model=SM6150
 
 # Thermal
 vendor.sys.thermal.data.path=/data/vendor/thermal/
