@@ -611,7 +611,9 @@ vendor/etc/permissions/com.fingerprints.extension.xml
 # FM
 -system_ext/lib64/fm_helium.so
 -system_ext/lib64/libfm-hci.so
+-system_ext/lib64/vendor.qti.hardware.fm@1.0.so;MODULE=vendor.qti.hardware.fm@1.0_system_ext
 -vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so
+-vendor/lib64/vendor.qti.hardware.fm@1.0.so;MODULE=vendor.qti.hardware.fm@1.0_vendor
 
 # Graphics - from LA.UM.9.1.r1-12900-SMxxx0.0
 -vendor/lib/egl/eglSubDriverAndroid.so|dd4d0a030c41dd2d02e20060272db86a54b7a6a0
