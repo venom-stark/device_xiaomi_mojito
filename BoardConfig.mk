@@ -177,7 +177,7 @@ VENDOR_SECURITY_PATCH := 2023-04-01
 
 # Sepolicy
 TARGET_SEPOLICY_DIR := msmsteppe
-include device/qcom/sepolicy_vndr-legacy-um/SEPolicy.mk
+include device/qcom/sepolicy_vndr/SEPolicy.mk
 include device/xiaomi/mojito-sepolicy/mojito-sepolicy.mk
 
 # Verified Boot
