@@ -14,21 +14,17 @@ PRODUCT_SHIPPING_API_LEVEL := 30
 # Inherit from mojito device
 $(call inherit-product, device/xiaomi/mojito/device.mk)
 
-#GAPPS
-TARGET_GAPPS_ARCH := arm64
-USE_GAPPS := true
-# Inherit some common Awaken stuff
+# Inherit some common derp stuff
 TARGET_USES_AOSP_RECOVERY := true
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SUPPORTS_QUICK_TAP := true
-TARGET_INCLUDE_LIVE_WALLPAPERS := false
-$(call inherit-product, vendor/awaken/config/common_full_phone.mk)
+$(call inherit-product, vendor/derp/config/common_full_phone.mk)
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := awaken_mojito
+PRODUCT_NAME := derp_mojito
 PRODUCT_DEVICE := mojito
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := Redmi Note 10
