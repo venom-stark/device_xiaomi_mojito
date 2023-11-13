@@ -1,2 +1,2 @@
-on charger
+on property:init.svc.vendor.charger=running
     start vendor.power_off_alarm
