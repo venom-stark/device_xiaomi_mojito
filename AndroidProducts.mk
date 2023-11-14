@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/awaken_mojito.mk
+    $(LOCAL_DIR)/derp_mojito.mk
