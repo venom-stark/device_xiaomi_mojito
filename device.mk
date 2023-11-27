@@ -353,6 +353,7 @@ PRODUCT_PACKAGES += \
     fstab.zram \
     fstab.qcom \
     init.mojito.rc \
+    init.qcom.alarm.rc \
     init.qcom.rc \
     init.recovery.qcom.rc \
     init.target.rc \
